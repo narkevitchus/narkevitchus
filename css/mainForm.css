@@ -1,0 +1,143 @@
+body {
+ margin: 0;
+ padding: 0;
+ font-family: Arial, sans-serif;
+ /*background-image: url(https://pp.userapi.com/c319829/v319829095/5b22/gMKPso4NUYo.jpg);
+*/
+}    
+/*.dws-wrapper {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+} */ 
+.dws-container {
+ position: fixed;
+ bottom: 0;
+ right: 3%;
+ width: 350px;
+ overflow: hidden;
+ transform: translateY(516px);
+ transition: .5s ease;
+}    
+    
+.formBox {
+ padding: 30px;
+ /*border: 4px solid #8a36a5;*/
+ background: #fff;
+/*outline: 3px solid #000; /* Чёрная рамка */
+border: 4px solid #fff; /* Белая рамка */
+border-radius: 4px; /* Радиус скругления */
+}    
+.toggleForm {
+ display: block;
+ background: #1E90FF;
+border: 2px solid #fff; /* Белая рамка */
+outline: 1px solid #000; /* Чёрная рамка */
+
+ color: #ffffff;
+
+ text-align: center;
+ margin: 0 auto;
+ font-size: 24px;
+ padding: 10px 0;
+ border-radius: 8px 8px 8px 8px;
+ width: 85%;
+ cursor: pointer;
+}
+/*.toggleForm i {
+ position: absolute;
+ top: 18px;
+ left: 40px;
+ font-size: 40px;
+} */ 
+
+
+h3 i {
+ position: absolute;
+ top: 30px;
+ left: 30px;
+ font-size: 35px!important;
+}    
+/*.inputBox {
+ outline: 1px solid orange;
+ margin: 0 0 20px;
+}  */ 
+/*.labelText {
+ font-size: 18px;
+ color: #a5a5a5;
+}  */ 
+.userInput {
+ width: 100%;
+ height: 45px;
+ font-size: 20px;
+ color: #575454;
+ outline: none;
+ border: none;
+ border-bottom: 1px solid #a5a5a5;
+ position: relative;
+ background: transparent;
+}    
+.inputBox {
+ position: relative;
+ margin: 0 0 20px;
+}
+.labelText {
+ position: absolute;
+ line-height: 55px;
+ font-size: 18px;
+ color: #a5a5a5;
+ color: #a5a5a5;
+ transition: .5s;
+}    
+
+.focus .labelText {
+ transform: translateY(-30px);
+ font-size: 14px;
+ color: #1E90FF;/*#b33edc;*/
+}    
+
+textarea.userInput {
+ height: 100px;
+ margin-top: 12px;
+}    
+.personalDoc,
+.personalDoc a {
+
+ color: #858585;
+}  
+.personalDoc a:hover {
+ text-decoration: none;
+ color: #b33edc;
+}    
+
+.inputBox label a{
+color: #1E90FF;	
+}
+
+
+.button {
+ background: #1E90FF;
+ color: #ffffff;
+ width: 45%;
+ height: 35px;
+ font-size: 18px;
+ border: none;
+ margin-top: 10px;
+ margin-left: 55%;
+ cursor: pointer;
+ transition: .5s;
+}
+.button:hover {
+ background: #0000FF;
+}    
+.dws-container:hover {
+ transform: translateY(500px);
+}    
+.toggleForm:checked ~ .dws-container {
+ transform: translateY(0);
+}    
+.toggleForm[type="checkbox"]{
+ display: none;
+}    
+
